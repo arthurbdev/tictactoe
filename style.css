@@ -1,20 +1,72 @@
+@font-face {
+  font-family: 'PublicPixel';
+  src: url('./PublicPixel.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PointSoft';
+  src: url('./point-soft-book.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: 'PublicPixel';
+  background-color: #0e0e0e;
+  color: #aeffc2;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   box-sizing: border-box;
 }
+
 #gameBoardContainer {
   display: grid;
   grid-template-rows: repeat(3, 150px);
   grid-template-columns: repeat(3, 150px);
   gap: 20px;
+  background-color: #844de7;
   width: 480px;
 }
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 1px 0px 15px #aeffc2;
+}
+
 .cell {
+  background-color: #0e0e0e;
+  font-family: 'PointSoft';
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 120px;
+}
+
+.x {
+  color: #aeffc2;
+  text-shadow: 1px 0px 10px #aeffc2;
+}
+
+.o {
+  color: #fe74d3;
+  text-shadow: 1px 0px 10px #fe74d3;
+}
+
+#turnDisplay {
+  font-size: 40px;
+}
+
+.playAgain {
+  font-size: 80px;
+  background-color: #0e0e0e;
+  color: #844de7;
+  text-shadow: 1px 0px 15px #844de7;
+  font-family: PublicPixel;
+  padding: 40px;
 }
